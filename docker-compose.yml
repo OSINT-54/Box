@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+  ubuntu-server:
+    container_name: ubuntu-20.04
+    build: .
+    volumes: 
+      - ./data/html:/var/www/html
+    entrypoint: /bin/bash
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+
