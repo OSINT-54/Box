@@ -1,7 +1,7 @@
 # Box
 
-$ mkdir Box 
-$ cd Box
+* mkdir Box
+* cd Box
 
 1. git init    
 2. git add -A 
