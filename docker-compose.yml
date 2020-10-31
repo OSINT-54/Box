@@ -5,8 +5,13 @@ services:
     container_name: ubuntu-20.04
     build: .
     volumes: 
+      - ./data:/home/data
       - ./data/html:/var/www/html
     entrypoint: /bin/bash
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+
+    ports:
+      - '8080:80'
+      
 
