@@ -1,8 +1,18 @@
 # Box
 
 ```bash
-$ mkdir Box
-$ cd Box
+$ cd Desktop
+```
+```bash
+$ git clone https://github.com/OSINT-54/Box.git
+## editing 
+$ git add -A
+$ git commit -m "Description" 
+$ git push -u origin master
+````
+##### in the next day ==> insted of cloning the repo every day ==> pull 
+```bash
+$ git pull origin master
 ```
 
 ```bash
