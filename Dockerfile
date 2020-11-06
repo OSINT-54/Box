@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 MAINTAINER o54ma_alsh4r1f osamaalsharif100@gmail.com
 
 #WORKDIR /home
-ENV HOME=/home \
+ENV  HOME=/home \
 	TERM=xterm-256color \
 	LANG=en_US.utf8 \
 	LANGUAGE=en_US.UTF-8 \
@@ -17,11 +17,10 @@ COPY ./config/.bashrc /home
 
 
 RUN apt-get update && \
- 	apt-get -y install sudo && \
- 	sudo apt-get install locales && \
-	sudo locale-gen && \
+	apt-get -y install sudo && \
 	sudo apt-get install -y nano 
 
+# sudo apt-get install -y nmap ftp sudo net-tools
 # RUN /bin/sh /home/data/build.sh
 
 EXPOSE 80

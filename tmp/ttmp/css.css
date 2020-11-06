@@ -1,0 +1,94 @@
+/**
+html {
+  background: black;
+  overflow: hidden;
+}
+**/
+
+body {
+
+font-family: Open Sans;
+  }
+
+/** h1 {
+  color: #9acc14;
+}
+
+**/
+
+/* ************************************************************ */
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #9acc14;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100vw; /* Full width */
+}
+
+/* Links inside the navbar */
+
+#logo { float: left; }
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: white;
+  color: black;
+}
+
+/* Main content */
+.main {
+  color: white;
+  text-align: center;
+  margin-top: 60px; /* Add a top margin to avoid content overlay */
+}
+/* ************************************************************ */
+
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  margin-top: 60px;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: white;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: black;
+  color: white;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}

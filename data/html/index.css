@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+	margin:0px;
+	padding: 0px;
+	/*color: white;*/
+	box-sizing: border-box;
+}
+:root{
+	--main-color:#9acc14;
+	--main-font:'Open Sans', sans-serif;
+	--secondary-font:'Quicksand', sans-serif;
+}
+body{
+	background-image: url('./Images/landing-pattern.png');
+}
+
+
+
+
+#particles-js{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+	color: #fff;
+	box-sizing: border-box;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-image: url(./Images/landing-pattern.png);
+
+	opacity: 0.4;
+	z-index: -3;
+}
+
+
+
+
+
+
+
+.navbar {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	background-color: transparent;
+	/*background-color: red;*/
+	/*position: fixed; */
+	width: 100%; 
+	height: 55px;
+}
+
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	flex-flow:row nowrap;
+}
+.logo-2{
+	margin-top: 2	00px;
+}
+.logo-2 .logo{
+	width: 120px;
+	height: 120px;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.logo-2 .logoname{
+	font-size:50px;
+}
+
+
+
+.logo{
+	width: 40px;
+	height: 40px;
+	background: url('./Images/icon.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	margin:0px 5px 0px 5px;
+	cursor: pointer;
+}	
+.logoname{
+	font-family: var(--main-font);
+	text-align: center;
+	align-items: center;
+	font-size:20px;
+	font-weight: bolder;
+	margin:0px 10px 0px 0px;
+	color: white;
+	cursor: pointer;
+}
+.logoname a{
+	text-decoration:none;
+	color: white;
+}
+
+.the{
+	font-weight: normal;
+}
+.pipe{
+	width: 3px; 
+	height: 50px;
+	background: white;
+}
+
+
+
+
+.links{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	flex-flow: row nowrap;
+}
+.links a{
+	font-size: 17px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-family: var(--secondary-font);
+	padding: 15px 16px;
+}
+.links .HackMe{
+	color: var(--main-color);
+	font-weight: bolder;
+}
+.links a:hover{
+	background: rgba(154, 204, 20, .75);
+  	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-1{
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+
+	padding-top: 200px;
+}
+/*auto type*/
+.autotype{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+	color: #fff;
+	text-align: center;
+	box-sizing: border-box;
+	line-height: 100px;
+	font-weight: 100;
+	font-size: 36px;
+
+	margin-top: 30px;
+}
+.shell-red{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+	text-align: center;
+	line-height: 100px;
+	font-weight: 100;
+	font-size: 36px;
+	box-sizing: border-box;
+	color: #ef2929!important;
+}
+.shell-blue{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+	text-align: center;
+	line-height: 100px;
+	font-weight: 100;
+	font-size: 36px;
+	box-sizing: border-box;
+	color: #729ece!important;
+}
+#autotype{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+	color: #fff;
+	text-align: center;
+	line-height: 100px;
+	font-weight: 100;
+	font-size: 36px;
+	box-sizing: border-box;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+	height: calc(100vh - 60px);
+
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-flow: row nowrap;
+}
+.split {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-flow: column wrap;
+
+	height: 100%;
+	width: 50%;
+
+	align-self: center;
+	padding: 70px;
+
+	font-family: var(--main-font);
+	font-weight: bold;
+
+	font-size:15px;
+
+	text-align:center;
+}
+.split img{
+	width: 250px;
+	height: 250px;
+	margin-bottom:50px; 
+	border-radius:50%;
+}
+.split-left{
+	background-color: white;
+	color: black;	
+}
+.split-right{
+	background-color: black;
+	color: white;	
+}
+
+
+
